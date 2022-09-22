@@ -1,0 +1,161 @@
+/*** LTR websites ***/
+@font-face {
+  font-family: "DSC-light";
+  src: url("../fonts/DSC-light.otf");
+}
+
+@font-face {
+  font-family: "DSC-Regular";
+  src: url("../fonts/DSC-Regular.otf");
+}
+
+@font-face {
+  font-family: "DSC-Medium";
+  src: url("../fonts/DSC-Medium.otf");
+}
+
+@font-face {
+  font-family: "DSC-bold";
+  src: url("../fonts/DSC-bold.otf");
+}
+
+body {
+  font-family: "DSC-Regular";
+  direction: ltr;
+  text-align: left;
+}
+
+html[dir="rtl"] body {
+  font-family: "DSC-Regular";
+}
+
+*,
+*:focus,
+*:active,
+button:focus {
+  outline: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+p {
+  font-size: 15px;
+  color: #666;
+  line-height: 30px;
+}
+
+h4 {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.mb-20 {
+  margin-bottom: 20px !important;
+}
+
+.mb-30 {
+  margin-bottom: 30px !important;
+}
+
+.mb-40 {
+  margin-bottom: 40px !important;
+}
+
+.mb-70 {
+  margin-bottom: 70px !important;
+}
+
+.mt-40 {
+  margin-top: 40px !important;
+}
+
+.mt-30 {
+  margin-top: 30px !important;
+}
+
+.ml-30 {
+  margin-left: 30px !important;
+}
+
+.mt-70 {
+  margin-top: 70px !important;
+}
+
+.mt-50 {
+  margin-top: 50px !important;
+}
+
+.pl-15 {
+  padding-left: 15px !important;
+}
+
+.pl-30 {
+  padding-left: 30px !important;
+}
+
+.strong {
+  font-weight: bold;
+}
+
+ul.blue-dots {
+  list-style: none;
+  line-height: 32px;
+}
+
+ul.blue-dots li::before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+ol {
+  list-style: decimal;
+  line-height: 32px;
+}
+
+ol li {
+  padding-left: 10px;
+}
+
+.text-left {
+  text-align: right !important;
+}
+
+.text-right {
+  text-align: left !important;
+}
+
+.float-left {
+  float: right !important;
+}
+
+.float-right {
+  float: left !important;
+}
+
+@media (min-width: 1300px) {
+  .container {
+    max-width: 1440px;
+  }
+}
+
+@media (min-width: 1300px) and (max-width: 1440px) {
+  .container {
+    max-width: 1200px;
+  }
+  .homeBanner .container {
+    max-width: 1280px;
+  }
+  body .owl-theme .owl-next {
+    left: -25px;
+  }
+  body .owl-theme .owl-prev {
+    right: -25px;
+  }
+}
+/*# sourceMappingURL=styleLTR.css.map */
