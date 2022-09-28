@@ -29,10 +29,13 @@ $( document ).ready(function() {
             0:{
                 items:1
             },
-            600:{
+            700:{
+                items:2
+            },
+            1100:{
                 items:3
             },
-            1000:{
+            1300:{
                 items:4
             }
         }
@@ -102,5 +105,31 @@ $( document ).ready(function() {
     AOS.init({
         duration: 1000,
     });
+  // fancybox 
+  $("a.fancybox").fancybox({
+    // openEffect	: 'none',
+    // closeEffect	: 'none'
+    loop: false,
+    padding: 0,
+    fitToView: false,
+    // beforeShow: function () {
+    //     this.width = "80%";
+    //     this.height = "80%";
+    // }
+  });
+  $("a.fancyboxVideo").fancybox({
+    // openEffect	: 'none',
+    // closeEffect	: 'none'
+    type: "iframe",
+    loop: false,
+    padding: 0,
+    width: "80%",
+    height: "80%",
+    youtube: {
+      autoplay: 1, // enable autoplay
+    },
+  });
+
+
 });
 

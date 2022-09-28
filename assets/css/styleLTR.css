@@ -152,10 +152,76 @@ ol li {
     max-width: 1280px;
   }
   body .owl-theme .owl-next {
-    left: -25px;
+    right: -25px;
   }
   body .owl-theme .owl-prev {
-    right: -25px;
+    left: -25px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1300px) {
+  body .owl-theme .owl-next {
+    right: -15px;
+  }
+  body .owl-theme .owl-prev {
+    left: -15px;
+  }
+  .lastNews .owl-carousel .owl-stage-outer .item .row .col-md-6:first-of-type {
+    padding-right: 70px;
+  }
+  .customMenu .SearchMenu {
+    margin-left: 5px;
+  }
+  .customMenu .navbar-light .navbar-nav .nav-link {
+    padding-right: 15px;
+    padding-left: 13px;
+    font-size: 16px;
+  }
+  .owl-carousel-banner .bannerBox p {
+    font-size: 17px;
+    line-height: 35px;
+  }
+  .title {
+    font-size: 30px;
+  }
+  .pra30 {
+    font-size: 28px;
+  }
+  .mainBtn {
+    padding: 14px 30px;
+    min-width: 130px;
+    font-size: 18px;
+  }
+  .Events .eventBox .textEv .eventP {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  footer .linksFotter li a {
+    color: #5e6265;
+    font-size: 16px;
+  }
+  footer .boxAction {
+    display: block;
+  }
+  footer .boxAction .secBtn {
+    width: 100%;
+  }
+  footer .col-md-4:not(:first-of-type) {
+    padding-left: 45px;
+  }
+  .breadcrumbBG .forFlexBrdCrb {
+    padding-left: 200px;
+  }
+  .NewsBg .col-md-4 {
+    width: 50%;
+  }
+  .NewsBg .justify-content-end {
+    -webkit-box-pack: justify !important;
+        -ms-flex-pack: justify !important;
+            justify-content: space-between !important;
+  }
+  .NewsBg .justify-content-end .col-4 {
+    width: 50%;
   }
 }
 /*# sourceMappingURL=styleLTR.css.map */

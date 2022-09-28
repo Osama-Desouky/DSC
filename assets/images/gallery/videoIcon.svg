@@ -1,0 +1,9 @@
+<svg id="videoIcon" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+  <g id="vuesax_bulk_video-circle" data-name="vuesax/bulk/video-circle">
+    <g id="video-circle">
+      <path id="Vector" d="M40,20A20,20,0,1,1,20,0,20,20,0,0,1,40,20Z" transform="translate(4 4)" fill="#c7993b" opacity="0.4"/>
+      <path id="Vector-2" data-name="Vector" d="M0,7.233V4.273c0-3.82,2.7-5.36,6-3.46l2.56,1.48,2.56,1.48c3.3,1.9,3.3,5.02,0,6.92l-2.56,1.48L6,13.653c-3.3,1.9-6,.34-6-3.46Z" transform="translate(18.2 16.767)" fill="#c7993b"/>
+      <path id="Vector-3" data-name="Vector" d="M0,0H48V48H0Z" fill="none" opacity="0"/>
+    </g>
+  </g>
+</svg>

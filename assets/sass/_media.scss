@@ -1,23 +1,90 @@
 @media (min-width: 1300px) {
-    .container {
-        max-width: 1440px;
-    }
+  .container {
+    max-width: 1440px;
+  }
 }
 @media (min-width: 1300px) and (max-width: 1440px) {
+  .container {
+    max-width: 1200px;
+    // border: 1px solid red;
+  }
+  .homeBanner {
     .container {
-        max-width: 1200px;
+      max-width: 1280px;
     }
-    .homeBanner {
-        .container {
-            max-width: 1280px;
-        }
-    }
-    body .owl-theme .owl-next {
-        left: -25px;
-    }
-    body .owl-theme .owl-prev {
-        right: -25px;
-    }
+  }
+  body .owl-theme .owl-next {
+    #{$end-direction}: -25px;
+  }
+  body .owl-theme .owl-prev {
+    #{$start-direction}: -25px;
+  }
 }
 
-
+@media (min-width: 992px) and (max-width: 1300px) {
+  body .owl-theme .owl-next {
+    #{$end-direction}: -15px;
+  }
+  body .owl-theme .owl-prev {
+    #{$start-direction}: -15px;
+  }
+  .lastNews .owl-carousel .owl-stage-outer .item .row .col-md-6:first-of-type {
+    padding-#{$end-direction}: 70px;
+  }
+  .customMenu .SearchMenu {
+    margin-#{$start-direction}: 5px;
+  }
+  .customMenu .navbar-light .navbar-nav .nav-link {
+    padding-#{$end-direction}: 15px;
+    padding-#{$start-direction}: 13px;
+    font-size: 16px;
+  }
+  .owl-carousel-banner .bannerBox p {
+    font-size: 17px;
+    line-height: 35px;
+  }
+  .title {
+    font-size: 30px;
+  }
+  .pra30 {
+    font-size: 28px;
+  }
+  .mainBtn {
+    padding: 14px 30px;
+    min-width: 130px;
+    font-size: 18px;
+  }
+  .Events .eventBox .textEv .eventP {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  footer .linksFotter li a {
+    color: #5e6265;
+    font-size: 16px;
+  }
+  footer .boxAction {
+    display: block;
+  }
+  footer .boxAction .secBtn {
+    width: 100%;
+  }
+  footer .col-md-4:not(:first-of-type) {
+    padding-#{$start-direction}: 45px;
+  }
+  // about
+  .breadcrumbBG .forFlexBrdCrb {
+    padding-#{$start-direction}: 200px;
+  }
+  // news and inner
+  .NewsBg {
+    .col-md-4 {
+      width: 50%;
+    }
+    .justify-content-end {
+      justify-content: space-between !important;
+      .col-4 {
+        width: 50%;
+      }
+    }
+  }
+}
