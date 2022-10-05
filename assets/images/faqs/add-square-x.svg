@@ -1,0 +1,6 @@
+<svg id="add-square-x" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+  <path id="Vector" d="M0,0H10" transform="translate(11.464 11.464) rotate(45)" fill="none" stroke="#eb5a3c" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+  <path id="Vector-2" data-name="Vector" d="M0,10V0" transform="translate(18.536 11.464) rotate(45)" fill="none" stroke="#eb5a3c" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+  <path id="Vector-3" data-name="Vector" d="M8.75,25h7.5C22.5,25,25,22.5,25,16.25V8.75C25,2.5,22.5,0,16.25,0H8.75C2.5,0,0,2.5,0,8.75v7.5C0,22.5,2.5,25,8.75,25Z" transform="translate(2.5 2.5)" fill="none" stroke="#eb5a3c" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+  <path id="Vector-4" data-name="Vector" d="M0,0H30V30H0Z" fill="none" opacity="0"/>
+</svg>

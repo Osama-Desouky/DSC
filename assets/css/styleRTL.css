@@ -475,7 +475,7 @@ body .owl-theme .disabled {
 
 .topNav .changeLang {
   font-size: 18px;
-  margin-right: 48px;
+  margin-right: 25px;
   color: #fff;
 }
 
@@ -488,10 +488,11 @@ body .owl-theme .disabled {
 .homeBanner.homeClass {
   min-height: 800px;
   height: 100vh;
-  background: transparent url(../images/home/imgBanner.svg) no-repeat;
   background-size: cover;
   margin-bottom: 110px;
   padding-bottom: 0px;
+  position: relative;
+  background-color: transparent;
 }
 
 .homeBanner.homeClass .topNav {
@@ -500,6 +501,17 @@ body .owl-theme .disabled {
 
 .homeBanner.homeClass .topNav img {
   max-height: 227px;
+}
+
+.homeBanner .InHome:before {
+  content: "";
+  background: transparent url(../images/home/imgBanner.svg) no-repeat;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
 .customMenu .navbar {
@@ -1844,6 +1856,310 @@ footer .served .linkR a {
 
 .NewsBg.patternGray .col-md-12 .headBox.flexSpaceBetween, .NewsBg.patternGray .col-md-12 .galleryBox .GTxt .headBox.count, .galleryBox .GTxt .NewsBg.patternGray .col-md-12 .headBox.count, .NewsBg.patternGray .col-md-12 .ReportBox .NewTxt .headBox.dateRe, .ReportBox .NewTxt .NewsBg.patternGray .col-md-12 .headBox.dateRe {
   margin-top: 54px;
+}
+
+/******************************************************
+
+M. Moussa
+
+******************************************************/
+@media (min-width: 1300px) {
+  .container.inner-container {
+    max-width: 1200px;
+  }
+}
+
+.topNav .faq-btn {
+  font-size: 15px;
+  margin-right: 20px;
+  color: #fff;
+}
+
+.grey-bg {
+  background-color: #f5f5f5;
+}
+
+h2.main-header {
+  font-size: 35px;
+  font-family: 'DSC-Medium';
+  color: #286140;
+  text-align: center;
+}
+
+.FAQ {
+  padding-top: 70px;
+  padding-bottom: 120px;
+}
+
+.FAQ h2.main-header {
+  margin-bottom: 24px;
+}
+
+.FAQ p {
+  font-size: 18px;
+  font-family: 'DSC-Medium';
+  color: #707070;
+  margin: 0 auto;
+  text-align: center;
+  max-width: 950px;
+  margin-bottom: 75px;
+}
+
+.FAQ .accordion .accordion-item {
+  margin-bottom: 24px;
+  border: none;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.FAQ .accordion .accordion-item.opened-item {
+  -webkit-filter: drop-shadow(0 15px 28px rgba(40, 97, 64, 0.1));
+          filter: drop-shadow(0 15px 28px rgba(40, 97, 64, 0.1));
+}
+
+.FAQ .accordion .accordion-item h2 {
+  padding: 0 20px;
+  background-color: #F8F8F8;
+}
+
+.FAQ .accordion .accordion-item h2 .accordion-button {
+  padding: 24px 0;
+  background-color: #F8F8F8;
+  font-size: 24px;
+  font-family: 'DSC-Medium';
+  color: #292C2E;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.FAQ .accordion .accordion-item h2 .accordion-button:after {
+  margin-left: 0;
+  margin-right: auto;
+  width: 30px;
+  height: 30px;
+  background-size: contain;
+  background-image: url(../images/faqs/add-square.svg);
+  position: absolute;
+  left: 0;
+}
+
+.FAQ .accordion .accordion-item h2 .accordion-button:not(.collapsed) {
+  border-bottom: 2px solid #F8ECE3;
+  color: #C7993B;
+  background-color: #F8F8F8;
+}
+
+.FAQ .accordion .accordion-item h2 .accordion-button:not(.collapsed)::after {
+  background-image: url(../images/faqs/add-square-x.svg);
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.FAQ .accordion .accordion-item .accordion-collapse .accordion-body {
+  padding: 24px;
+  font-size: 18px;
+  color: #707070;
+  background-color: #F8F8F8;
+}
+
+.contact-us .main-header {
+  padding-top: 60px;
+  padding-bottom: 75px;
+}
+
+.contact-us .contact-sec {
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.contact-us .contact-sec .contact-with-us {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 48px;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact-us .contact-sec .contact-with-us h3 {
+  font-size: 28px;
+  font-family: "DSC-Medium";
+  color: #292C2E;
+  margin-bottom: 24px;
+}
+
+.contact-us .contact-sec .contact-with-us p {
+  font-size: 18px;
+  font-family: "DSC-Medium";
+  color: #707070;
+  margin-bottom: 24px;
+}
+
+.contact-us .contact-sec .contact-with-us ul.Contact-ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-us .contact-sec .contact-with-us ul.Contact-ul li {
+  margin-bottom: 12px;
+}
+
+.contact-us .contact-sec .contact-with-us ul.Contact-ul li:last-child {
+  margin-bottom: 0px;
+}
+
+.contact-us .contact-sec .contact-with-us ul.Contact-ul li a {
+  font-size: 16px;
+  color: #5E6265;
+}
+
+.contact-us .contact-sec .contact-with-us ul.Contact-ul li a img {
+  margin-left: 9px;
+  max-width: 24px;
+  max-height: 22px;
+}
+
+.contact-us .contact-sec .contact-with-us .social-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 24px;
+}
+
+.contact-us .contact-sec .contact-with-us .social-links ul li {
+  margin-left: 24px;
+}
+
+.contact-us .contact-sec .contact-with-us .social-links ul li:last-child {
+  margin-left: 0px;
+}
+
+.contact-us .contact-sec .contact-with-us .social-links ul li a {
+  width: 30px;
+  height: 30px;
+  display: block;
+}
+
+.contact-us .contact-sec .contact-with-us .social-links ul li a img {
+  max-width: 100%;
+}
+
+.contact-us .contact-sec .contact-form {
+  background-color: #286140;
+  padding: 60px 30px;
+  background-image: url(../images/contactUs/form-pattern.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom left;
+  border-radius: 12px;
+}
+
+.contact-us .contact-sec .contact-form .form-title {
+  font-size: 28px;
+  font-family: "DSC-Medium";
+  color: #C7993B;
+  margin-bottom: 24px;
+}
+
+.contact-us .contact-sec .contact-form .formGroup {
+  margin-bottom: 15px;
+}
+
+.contact-us .contact-sec .contact-form .formGroup input, .contact-us .contact-sec .contact-form .formGroup textarea {
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 16px 20px;
+  font-size: 16px;
+  font-family: "DSC-Medium";
+  width: 100%;
+  min-height: 60px;
+  color: #707070;
+  border: none;
+}
+
+.contact-us .contact-sec .contact-form .formGroup input::-webkit-input-placeholder, .contact-us .contact-sec .contact-form .formGroup textarea::-webkit-input-placeholder {
+  color: #C7C8CA;
+  font-size: 16px;
+}
+
+.contact-us .contact-sec .contact-form .formGroup input:-ms-input-placeholder, .contact-us .contact-sec .contact-form .formGroup textarea:-ms-input-placeholder {
+  color: #C7C8CA;
+  font-size: 16px;
+}
+
+.contact-us .contact-sec .contact-form .formGroup input::-ms-input-placeholder, .contact-us .contact-sec .contact-form .formGroup textarea::-ms-input-placeholder {
+  color: #C7C8CA;
+  font-size: 16px;
+}
+
+.contact-us .contact-sec .contact-form .formGroup input::placeholder, .contact-us .contact-sec .contact-form .formGroup textarea::placeholder {
+  color: #C7C8CA;
+  font-size: 16px;
+}
+
+.contact-us .contact-sec .contact-form .btnForm {
+  background-color: #C7993B;
+  color: #fff;
+  border-radius: 4px;
+  font-size: 15px;
+  width: 190px;
+  height: 52px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 0;
+}
+
+.map-area {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.map-area h3 {
+  font-size: 28px;
+  font-family: 'DSC-Medium';
+  color: #292C2E;
+  margin-bottom: 48px;
+  text-align: center;
+}
+
+.map-area .mapFrom {
+  width: 100%;
+  height: 590px;
+  padding: 12px;
+  background-color: #fff;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.map-area .mapFrom iframe {
+  width: 100%;
+  height: 100%;
 }
 
 @media (min-width: 1300px) {
