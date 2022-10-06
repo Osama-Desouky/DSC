@@ -21,6 +21,101 @@
   }
 }
 
+@media screen and (min-width: 992px) {
+  // body {
+  //   .navbarCustom {
+  //     .dropdown-menu {
+  //       top: 143px;
+  //     }
+  //   }
+  //   .fixedTop {
+  //     .navbarCustom {
+  //       .dropdown-menu {
+  //         top: 90px;
+  //       }
+  //     }
+  //   }
+  // }
+
+  .customMenu .navbar {
+    .dropdown-menu {
+      width: 100%;
+      // #{$end-direction}: 0;
+      // #{$start-direction}: 0;
+      // /*  height of nav-item  */
+      // top: 45px;
+
+      display: block;
+      visibility: hidden;
+      opacity: 0;
+      transition: visibility 0.5s, opacity 0.3s linear;
+    }
+    padding-top: 0px;
+    padding-bottom: 0px;
+    position: unset;
+    .nav-item {
+      padding: 5px;
+      margin: 0 2.5px;
+    }
+    .dropdown {
+      // position: static;
+      &:hover {
+        .dropdown-menu {
+          display: block;
+          visibility: visible;
+          opacity: 1;
+          transition: visibility 0.5s, opacity 0.3s linear;
+        }
+      }
+      .dropdown-toggle{
+
+        &::after{
+          display: none;
+        }
+      }
+      .dropdown-menu {
+        &:hover {
+          display: block;
+          visibility: visible;
+          opacity: 1;
+          transition: visibility 0s, opacity 0.3s linear;
+        }
+        .dropdown-item{
+          color: #fff;
+          font-size: 16px;
+          padding: 8px 25px;
+          position: relative;
+          transition: 300ms;
+          &::before{
+            content: "";
+            opacity: 0;
+            position: absolute;
+            #{$start-direction}: 25px;
+            top: 11px;
+            transition: 300ms;
+            background-image: url(../images/home/arr-left-drp.svg);
+          }
+          &:hover{
+            padding-#{$start-direction}: 35px;
+            background-color: #C8A440 !important;
+            &::before{
+              background-repeat: no-repeat;
+              width: 6px;
+              height: 12px;
+              #{$start-direction}: 16px;
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+    // .dropdown-menu {
+    //   border: 1px solid rgba(0, 0, 0, 0.15);
+    //   background-color: #fff;
+    // }
+  }
+}
+
 @media (min-width: 992px) and (max-width: 1300px) {
   body .owl-theme .owl-next {
     #{$end-direction}: -15px;
