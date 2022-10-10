@@ -73,7 +73,7 @@ $( document ).ready(function() {
         nav:true,
         rtl: true,
         navText: arrow,
-        autoplay:true,
+        autoplay:false,
         autoplayTimeout:1000,
         autoplayHoverPause:true,
         responsive:{
@@ -112,10 +112,11 @@ $( document ).ready(function() {
     loop: false,
     padding: 0,
     fitToView: false,
-    // beforeShow: function () {
-    //     this.width = "80%";
-    //     this.height = "80%";
-    // }
+    
+    beforeShow: function () {
+        this.width = "80%";
+        this.height = "500px";
+    }
   });
   $("a.fancyboxVideo").fancybox({
     // openEffect	: 'none',
@@ -124,12 +125,50 @@ $( document ).ready(function() {
     loop: false,
     padding: 0,
     width: "80%",
-    height: "80%",
+    height: "500px",
     youtube: {
       autoplay: 1, // enable autoplay
     },
   });
 
 
+
 });
 
+// contrastMode
+$(".top-functions .colors").on("click", function (e) {
+    console.log("colors");
+    $("body").toggleClass("contrast");
+    e.stopPropagation();
+   
+  });
+
+
+    /* --- Font sizing Function --- */
+    $('.top-functions .increase').click(function(){
+        console.log("increase");
+        modifyFontSize('html','increase');
+      });
+      $('.top-functions .decrease').click(function(){
+        console.log("dec");
+        modifyFontSize('html','decrease')
+      });
+
+        /*----Font sizing Function ---*/
+  function modifyFontSize(MyElement,flag){
+
+    var HtmlElement = $(MyElement);
+    var currentFontSize = parseInt (HtmlElement.css('font-size'));
+    
+    if (flag =='increase' & currentFontSize < 19 )
+        currentFontSize += 1;
+    else if (flag == 'decrease' & currentFontSize >= 16 )
+        currentFontSize -= 1;
+    else if (flag == 'reset')
+    currentFontSize = 16;
+
+    HtmlElement.css('font-size', currentFontSize);
+
+    // console.log(currentFontSize);
+
+  }
