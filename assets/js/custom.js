@@ -102,6 +102,28 @@ $( document ).ready(function() {
     // end ready
 
 
+
+    $('.owl-carousel-reports').owlCarousel({
+        loop:false,
+        margin:24,
+        nav:true,
+        rtl: true,
+        navText: arrow,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:2
+            },
+            1400:{
+                items:3
+            }
+        }
+    })
+
+
+
     AOS.init({
         duration: 1000,
     });

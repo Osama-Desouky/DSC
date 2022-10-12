@@ -223,6 +223,10 @@ ol li {
     left: 16px;
     opacity: 1;
   }
+  .offset-lg-1 {
+    margin-right: 8.33333333%;
+    margin-left: auto;
+  }
 }
 
 @media (min-width: 992px) and (max-width: 1300px) {
@@ -959,6 +963,9 @@ ol li {
     overflow: hidden;
     width: 315px !important;
     height: 400px !important;
+  }
+  .Events .eventBox .textEv .date span.to {
+    display: block;
   }
 }
 /*# sourceMappingURL=styleLTR.css.map */

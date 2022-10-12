@@ -114,6 +114,11 @@
     //   background-color: #fff;
     // }
   }
+  
+  .offset-lg-1 {
+    margin-right: 8.33333333%;
+    margin-left: auto;
+  }
 }
 
 @media (min-width: 992px) and (max-width: 1300px) {
@@ -905,5 +910,8 @@
     overflow: hidden;
     width: 315px!important;
     height: 400px !important;
+}
+.Events .eventBox .textEv .date span.to{
+  display: block;
 }
 }
