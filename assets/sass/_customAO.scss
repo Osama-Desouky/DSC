@@ -2400,6 +2400,7 @@ h2.main-header{
     a{
       font-size: 1.125rem;
       color: $main-color;
+      z-index: 999;
       img{
         margin-#{$start-direction}: 20px;
       }

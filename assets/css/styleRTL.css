@@ -2911,6 +2911,7 @@ h2.main-header {
 .reports-home .more-rep a {
   font-size: 1.125rem;
   color: #286140;
+  z-index: 999;
 }
 
 .reports-home .more-rep a img {
