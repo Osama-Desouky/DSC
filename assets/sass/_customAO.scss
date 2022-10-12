@@ -2391,4 +2391,18 @@ h2.main-header{
       }
     }
   }
+
+  .more-rep{
+    margin-top: -20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    a{
+      font-size: 1.125rem;
+      color: $main-color;
+      img{
+        margin-#{$start-direction}: 20px;
+      }
+    }
+  }
 }
