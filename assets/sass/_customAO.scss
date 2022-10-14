@@ -21,20 +21,20 @@ img {
 }
 .readMore {
   color: $main-color-gold-c7993b;
-  padding-left: 25px;
+  padding-#{$end-direction}: 25px;
   position: relative;
   display: inline-block;
   &:hover {
     color: $main-color-gold-c7993b;
     &::after {
-      left: -3px;
+      #{$end-direction}: -3px;
     }
   }
   &::after {
     position: absolute;
     transition: 0.25s;
     content: "";
-    left: 0;
+    #{$end-direction}: 0;
     top: 5px;
     height: 19px;
     width: 14px;
@@ -176,7 +176,7 @@ h2 {
     @extend .positionAbsolute;
     width: 100%;
     height: 360px;
-    left: 0;
+    #{$end-direction}: 0;
     z-index: -1;
     top: 0;
     background-color: $bgf5f5f5;
@@ -305,7 +305,7 @@ body {
       }
     }
     // .InHome{
-    //   right: 0;
+    //   #{$start-direction}: 0;
     //   position: absolute;
     //   top: 0;
     //   width: 100%;
@@ -315,13 +315,13 @@ body {
     //     .owl-item {
     //       height: 970px;
     //       width: 100% !important;
-    //       right: 0;
+    //       #{$start-direction}: 0;
     //       top: 0;
     //       .item{
     //         height: 970px;
     //         width: 100%;
     //         position: absolute;
-    //         right: 0;
+    //         #{$start-direction}: 0;
     //         top: 0;
     //       }
     //     }
@@ -335,7 +335,7 @@ body {
 //     height: 100%;
 //     position: absolute;
 //     top: 0;
-//     left: 0;
+//     #{$end-direction}: 0;
 //     z-index: -1;
 //     // background-color: #286140;
 // }
@@ -356,13 +356,13 @@ body {
   //   margin: 0;
 }
 .customMenu .nav-item.dropdown .nav-link::after {
-  margin-left: 0;
+  margin-#{$end-direction}: 0;
   vertical-align: 0;
   content: "";
   border-top: 0;
-  border-right: 0;
+  border-#{$start-direction}: 0;
   border-bottom: 0;
-  border-left: 0;
+  border-#{$end-direction}: 0;
   background-image: url(../images/home/dropMnuArrow.svg);
   background-repeat: no-repeat;
   background-size: 10px;
@@ -370,7 +370,7 @@ body {
   height: 10px;
   -webkit-transform: translateY(6px);
   transform: translateY(6px);
-  margin-right: 8px;
+  margin-#{$start-direction}: 8px;
 }
 .customMenu .navbar-light .navbar-brand:focus,
 .navbar-light .navbar-brand:hover {
@@ -384,8 +384,8 @@ body {
   padding-top: 17px;
   padding-bottom: 17px;
   transition: 0.3s;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-#{$end-direction}: 30px;
+  padding-#{$start-direction}: 30px;
   font-size: 1.125rem;
   color: #fff;
   font-family: "DSC-Medium";
@@ -431,14 +431,14 @@ body {
 .customMenu .megamenu {
   position: absolute;
   width: 100%;
-  left: 0;
-  right: 0;
+  #{$end-direction}: 0;
+  #{$start-direction}: 0;
   background: $main-color-gold-b58500;
   padding: 15px;
-  text-align: right;
+  text-align: #{$start-direction};
 }
 .customMenu .megamenu h6 {
-  margin-left: 21px;
+  margin-#{$end-direction}: 21px;
 }
 .customMenu .megamenu i {
   width: 20px;
@@ -446,7 +446,7 @@ body {
 .customMenu .SearchMenu {
   display: flex;
   align-items: center;
-  margin-right: 40px;
+  margin-#{$start-direction}: 40px;
 }
 // AO start about
 .aboutCenter {
@@ -471,7 +471,7 @@ body {
     height: 100%;
     position: absolute;
     top: 0;
-    left: 0;
+    #{$end-direction}: 0;
     z-index: -1;
   }
   .bannerBox {
@@ -904,20 +904,20 @@ footer {
     background: #ffffff;
     min-height: 67px;
     align-items: center;
-    padding-right: 16%;
+    padding-#{$start-direction}: 16%;
     .breadcrumb {
       margin: 0;
       a {
         font-size: 1rem;
         color: $a-color6e6259;
         font-family: "DSC-Medium";
-        padding-left: 37px;
+        padding-#{$end-direction}: 37px;
         position: relative;
         &::before {
           @extend .positionAbsolute;
           width: 6px;
           height: 13px;
-          left: 17px;
+          #{$end-direction}: 17px;
           top: 7px;
           background: transparent url(../images/about/breadcrumbArrow.svg)
             no-repeat;
@@ -967,7 +967,7 @@ footer {
     height: 500px;
     background: #fff url(../images/about/PatternBGcont.svg);
     top: 65px;
-    left: 0;
+    #{$end-direction}: 0;
     z-index: -2;
   }
 
@@ -990,7 +990,7 @@ footer {
     img {
       position: absolute;
       top: 0;
-      left: 0;
+      #{$end-direction}: 0;
       height: 100%;
       width: 100%;
       object-fit: cover;
@@ -1070,7 +1070,7 @@ footer {
     height: 100%;
     @extend .flexColumn;
     align-items: unset;
-    padding-left: 100px;
+    padding-#{$end-direction}: 100px;
     h3 {
       margin-bottom: 38px;
     }
@@ -1092,12 +1092,12 @@ footer {
   }
   &::before {
     top: 0;
-    right: 0;
+    #{$start-direction}: 0;
     transform: scale(-1);
   }
   &::after {
     bottom: 0;
-    left: 0;
+    #{$end-direction}: 0;
   }
   .title28 {
     text-align: center;
@@ -1179,7 +1179,7 @@ footer {
       .label {
         font-size: 1.25rem;
         color: $main-color-gold-c7993b;
-        margin-left: 30px;
+        margin-#{$end-direction}: 30px;
       }
       .select {
         min-width: 220px;
@@ -1252,7 +1252,7 @@ footer {
 .paginationDetails {
   padding: 58px 0 0;
   @extend .flexCenter;
-  padding-right: 12%;
+  padding-#{$start-direction}: 12%;
   strong,
   span {
     font-size: 1rem;
@@ -1261,7 +1261,7 @@ footer {
   }
   strong {
     color: $main-color;
-    padding-right: 10px;
+    padding-#{$start-direction}: 10px;
   }
   .selectNum {
     border: 2px solid rgba(40, 97, 64, 0.2);
@@ -1270,8 +1270,8 @@ footer {
     color: #5e5e59;
     appearance: none;
     background: transparent url(../images/news/arrowSelectGreen.svg) no-repeat;
-    padding-right: 11px;
-    padding-left: 25px;
+    padding-#{$start-direction}: 11px;
+    padding-#{$end-direction}: 25px;
     padding-top: 6px;
     margin-bottom: 6px;
     background-position: 9px 11px;
@@ -1382,7 +1382,7 @@ footer {
   .forClick {
     position: absolute;
     content: '';
-    left:0;
+    #{$end-direction}:0;
     top: 0;
     width: 100%;
     height: 100%;
@@ -1412,7 +1412,7 @@ footer {
       background: transparent url(../images/gallery/eyeImg.svg) no-repeat;
       background-position: center;
       border-radius: 50%;
-      left: calc(50% - 60px);
+      #{$end-direction}: calc(50% - 60px);
       top: calc(50% - 60px);
       transform: translate(50%, 50%);
     }
@@ -1438,7 +1438,7 @@ footer {
       p {
         margin-bottom: 0;
         img {
-          margin-left: 8px;
+          margin-#{$end-direction}: 8px;
         }
       }
     }
@@ -1521,7 +1521,7 @@ footer {
           span {
             font-size: 0.875rem;
             color: #6E6259;
-            margin-right: 8px;
+            margin-#{$start-direction}: 8px;
           }
         }
 
@@ -1562,7 +1562,7 @@ footer {
 .NewsBg .sortActions  {
   .SelectInput  {
     &:not(:last-of-type) {
-      margin-left: 29px;
+      margin-#{$end-direction}: 29px;
     }
     .select {
       min-width: 150px;
@@ -1571,7 +1571,7 @@ footer {
     }
     .label {
       font-size: 1rem;
-      margin-left: 24px;
+      margin-#{$end-direction}: 24px;
     }
   }
 
@@ -1596,7 +1596,7 @@ M. Moussa
   }
 }
 .topNav {
-  .left{
+  .#{$end-direction}{
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -1649,7 +1649,7 @@ M. Moussa
           background-color: $main-color-gold;
           color: #fff;
           img{
-            filter: contrast(1) brightness(4);
+            filter: contrast(1) b#{$start-direction}ness(4);
           }
         }
       }
@@ -1663,7 +1663,7 @@ M. Moussa
   background-color: #b58500;
   text-align: revert;
   min-width: 240px;
-  right: 0;
+  #{$start-direction}: 0;
   top: 90%;
 }
 
@@ -1751,7 +1751,22 @@ h2.main-header{
 
   &.sitemap{
     padding-top: 60px;
-    
+    .accordion {
+      .accordion-item {
+        h2 {
+          .accordion-button{
+            &:hover{
+              color: $main-color;
+            }
+            &:not(.collapsed){
+              &:hover{
+                color: $orange-text;
+              } 
+            }
+          }
+        }
+      }
+    }
     .sitemap-a{
       padding: 20px;
       font-size: 1.5rem;
@@ -2014,8 +2029,8 @@ h2.main-header{
 }
 
 .contrast {
-  -webkit-filter: grayscale(100%) brightness(95%) contrast(120%);
-          filter: grayscale(100%) brightness(95%) contrast(120%);
+  -webkit-filter: grayscale(100%) b#{$start-direction}ness(95%) contrast(120%);
+          filter: grayscale(100%) b#{$start-direction}ness(95%) contrast(120%);
 }
 // .fancybox-opened{
 //   width: 100% !important;
@@ -2405,5 +2420,40 @@ h2.main-header{
         margin-#{$start-direction}: 20px;
       }
     }
+  }
+}
+
+
+
+
+
+html[lang="en"] {
+  
+  .customMenu .navbar .dropdown .dropdown-menu .dropdown-item::before{
+    transform: rotate(180deg);
+  }
+  body .owl-theme .owl-nav [class*="owl-"]{
+    transform: rotate(180deg);
+  }
+  .home-ads .more-ads a img , .reports-home .more-rep a img{
+    transform: rotate(180deg);
+  }
+  .breadcrumbBG .forFlexBrdCrb .breadcrumb a::before{
+    transform: rotate(180deg);
+  }
+  .select{
+    background-position: 95% 18px;
+  }
+  .paginationDetails .selectNum{
+    background-position: 90% 11px;
+  }
+  .pagination .NextPagi, .pagination li:first-of-type a {
+    transform: scaleX(-1);
+  }
+  .galleryBox .GImg::after{
+    transform: translate(-50%, 50%);
+  }
+  .readMore::after{
+    transform: scaleX(-1);
   }
 }

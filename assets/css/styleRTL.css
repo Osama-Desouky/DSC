@@ -2158,6 +2158,14 @@ h2.main-header {
   padding-top: 60px;
 }
 
+.FAQ.sitemap .accordion .accordion-item h2 .accordion-button:hover {
+  color: #286140;
+}
+
+.FAQ.sitemap .accordion .accordion-item h2 .accordion-button:not(.collapsed):hover {
+  color: #C7993B;
+}
+
 .FAQ.sitemap .sitemap-a {
   padding: 20px;
   font-size: 1.5rem;
@@ -2916,6 +2924,49 @@ h2.main-header {
 
 .reports-home .more-rep a img {
   margin-right: 20px;
+}
+
+html[lang="en"] .customMenu .navbar .dropdown .dropdown-menu .dropdown-item::before {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+html[lang="en"] body .owl-theme .owl-nav [class*="owl-"] {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+html[lang="en"] .home-ads .more-ads a img, html[lang="en"] .reports-home .more-rep a img {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+html[lang="en"] .breadcrumbBG .forFlexBrdCrb .breadcrumb a::before {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+html[lang="en"] .select {
+  background-position: 95% 18px;
+}
+
+html[lang="en"] .paginationDetails .selectNum {
+  background-position: 90% 11px;
+}
+
+html[lang="en"] .pagination .NextPagi, html[lang="en"] .pagination li:first-of-type a {
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+
+html[lang="en"] .galleryBox .GImg::after {
+  -webkit-transform: translate(-50%, 50%);
+          transform: translate(-50%, 50%);
+}
+
+html[lang="en"] .readMore::after {
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
 }
 
 @media (min-width: 1300px) {
