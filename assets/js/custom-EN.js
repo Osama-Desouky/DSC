@@ -113,11 +113,40 @@ $( document ).ready(function() {
             0:{
                 items:1
             },
-            600:{
+            768:{
                 items:2
             },
             1400:{
                 items:3
+            }
+        }
+    })
+
+    $('.owl-carousel-evInner').owlCarousel({
+        loop:false,
+        margin:15,
+        nav:true,
+        rtl: false,
+        navText: arrow,
+        dots:false,
+        responsive:{
+            0:{
+                items:1,
+                dots:true,
+            },
+            575:{
+                items:2,
+                dots:true,
+            },
+            992:{
+                items:3,
+                dots:true,
+            },
+            1200:{
+                dots:false,
+            },
+            1400:{
+                items:5
             }
         }
     })

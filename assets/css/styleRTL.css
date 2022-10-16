@@ -1690,10 +1690,19 @@ footer .served .linkR a {
 }
 
 .newsInner .txtInner .date {
-  font-size: 1rem;
+  font-size: 0.9375rem;
   color: #6e6259;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   display: inline-block;
+}
+
+.newsInner .txtInner .date.date-to {
+  color: #b58500;
+}
+
+.newsInner .txtInner .date.date-to::before {
+  content: "-";
+  margin: 0 8px;
 }
 
 .newsInner .txtInner .title {
@@ -1709,11 +1718,11 @@ footer .served .linkR a {
 }
 
 .newsInner .txtInner p img {
-  width: 75%;
+  width: 100%;
   height: auto;
-  margin: 10px auto 20px;
+  margin: 30px auto 30px;
   display: block;
-  border: 1px solid #ddd;
+  border-radius: 4px;
 }
 
 .newsInner .txtInner .subTitle {
@@ -1723,8 +1732,7 @@ footer .served .linkR a {
 }
 
 .newsInner .txtInner .location {
-  display: inline-block;
-  margin-right: 50px;
+  margin-bottom: 50px;
 }
 
 .newsInner .txtInner .location img {
@@ -1732,7 +1740,8 @@ footer .served .linkR a {
 }
 
 .newsInner .txtInner .location span {
-  color: #6e6259;
+  color: #32383D;
+  font-size: 0.9375rem;
 }
 
 .galleryBox {
@@ -2926,6 +2935,30 @@ h2.main-header {
   margin-right: 20px;
 }
 
+.Event-slider .ev-slider-card {
+  position: relative;
+}
+
+.Event-slider .ev-slider-card .img-box {
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.Event-slider .ev-slider-card .img-box img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.Event-slider .ev-slider-card a.forClick {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+}
+
 html[lang="en"] .customMenu .navbar .dropdown .dropdown-menu .dropdown-item::before {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
@@ -3190,6 +3223,16 @@ html[lang="en"] .readMore::after {
     overflow: hidden;
     margin-bottom: 0;
   }
+  .reports-home .reports-card:hover {
+    height: 590px;
+  }
+  .reports-home .reports-card .content-box h4 {
+    font-size: 1.375rem;
+  }
+  .reports-home .reports-card .content-box .btns-box a {
+    height: 50px;
+    padding: 0 25px !important;
+  }
 }
 
 @media (max-width: 1199.98px) {
@@ -3357,6 +3400,18 @@ html[lang="en"] .readMore::after {
   .owl-theme .owl-nav {
     display: none;
   }
+  .home-ads .ads-card .img-box {
+    height: 265px;
+  }
+  .home-ads .ads-card .content-box {
+    padding: 15px;
+    padding-bottom: 30px;
+  }
+  .home-ads .ads-card .content-box h4 {
+    font-size: 1.25rem;
+    line-height: 27px;
+    height: calc(28px* 2);
+  }
 }
 
 @media (max-width: 991.98px) {
@@ -3371,7 +3426,7 @@ html[lang="en"] .readMore::after {
     position: absolute;
     background: #b58500;
     width: 100%;
-    top: 70px;
+    top: 45px;
     right: 0px;
     z-index: 2;
     padding-bottom: 30px;
@@ -3583,13 +3638,113 @@ html[lang="en"] .readMore::after {
   .aboutBg {
     padding: 66px 0 85px;
   }
+  .homeBanner .topNav {
+    padding: 15px 0 30px !important;
+  }
+  .homeBanner .topNav img {
+    max-height: 165px !important;
+  }
+  .content .top-sec .content-box h2 {
+    font-size: 1.5625rem;
+  }
+  .content p {
+    font-size: 1rem;
+    line-height: 30px;
+  }
+  .content h4 {
+    font-size: 1.325rem;
+  }
+  .content ul li, .content ol li {
+    font-size: 1rem;
+    margin-bottom: 5px;
+  }
+  .content .table-box {
+    padding: 0;
+  }
+  .content .table-box .table thead tr th {
+    font-size: 1rem;
+  }
+  .content .table-box .table tbody tr th, .content .table-box .table tbody tr td {
+    font-size: 1rem;
+  }
+  .FAQ h2.main-header {
+    font-size: 1.5625rem;
+  }
+  .FAQ p {
+    font-size: 1rem;
+  }
+  .FAQ .accordion .accordion-item h2 .accordion-button {
+    font-size: 1.25rem;
+  }
+  .FAQ .accordion .accordion-item .accordion-collapse .accordion-body {
+    font-size: 1rem;
+  }
+  .FAQ.sitemap .sitemap-a {
+    font-size: 1.25rem;
+  }
+  .FAQ.sitemap ul li {
+    margin-bottom: 7px;
+  }
+  .FAQ.sitemap ul li a {
+    font-size: 1rem;
+  }
+  .home-ads .ads-card {
+    margin-bottom: 20px;
+  }
+  .reports-home .item {
+    height: 500px;
+  }
+  .reports-home .reports-card {
+    height: 405px;
+  }
+  .reports-home .reports-card:hover {
+    height: 480px;
+  }
+  .reports-home .reports-card .img-box {
+    height: 285px;
+  }
+  .home-ads .top-area h2.main-header, .reports-home .top-area h2.main-header {
+    font-size: 1.25rem;
+  }
+  .home-ads .top-area p, .reports-home .top-area p {
+    font-size: 1rem;
+  }
+  .contact-us .main-header {
+    font-size: 1.5rem;
+    padding-bottom: 35px;
+  }
+  .contact-us .contact-sec .contact-with-us h3 {
+    font-size: 1.25rem;
+  }
+  .contact-us .contact-sec .contact-with-us p {
+    font-size: 1rem;
+  }
+  .contact-us .contact-sec .contact-with-us ul.Contact-ul li a {
+    font-size: 0.875rem;
+  }
+  .contact-us .contact-sec .contact-form .form-title {
+    font-size: 1.25rem;
+  }
+  .contact-us .contact-sec .contact-form .formGroup input, .contact-us .contact-sec .contact-form .contact-us .contact-sec .contact-form .formGroup textarea {
+    padding: 8px 20px;
+    font-size: .875rem;
+    font-family: "DSC-Medium";
+    width: 100%;
+    min-height: 40px;
+  }
+  .map-area h3 {
+    font-size: 1.5rem;
+  }
+  .map-area .mapFrom {
+    height: 400px;
+  }
 }
 
 @media (max-width: 767.98px) {
   .homeBanner .left {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin-right: 190px;
+    margin-right: 175px;
   }
   .homeBanner .topNav {
     padding: 25px 0 55px;
@@ -3718,23 +3873,34 @@ html[lang="en"] .readMore::after {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .NewsBg .headBox .SelectInput {
+  .NewsBg .headBox .sortActions {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .NewsBg .headBox .sortActions .SelectInput {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     margin-top: 10px;
+    margin-left: 0;
+    width: 300px;
   }
   .select {
     font-size: .75rem;
   }
   .NewsBg .headBox .SelectInput .select {
-    min-width: 125px;
+    min-width: 140px;
     background-size: 15px;
   }
   .NewsBg .headBox .SelectInput .label {
@@ -3800,6 +3966,9 @@ html[lang="en"] .readMore::after {
   }
   .Events .eventBox .textEv .date span.to {
     display: block;
+  }
+  .reports-home .more-rep {
+    margin-top: 10px;
   }
 }
 /*# sourceMappingURL=styleRTL.css.map */

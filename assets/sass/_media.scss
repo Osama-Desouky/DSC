@@ -270,7 +270,29 @@
       margin-bottom: 0;
     }
   }
+
+  .reports-home {
+
+    .reports-card {
+      &:hover{
+        height: 590px;
+      }
+      .content-box {
+        h4{
+          font-size: 1.375rem;
+        }
+      .btns-box {
+        a{
+          height: 50px;
+          padding: 0 25px !important;
+        }
+      }
+    }
+  }
 }
+}
+
+
 @media (max-width: 1199.98px) {
   .customMenu .navbar-light .navbar-nav .nav-link {
     padding-#{$start-direction}: 5px;
@@ -444,6 +466,24 @@
   .owl-theme .owl-nav{
     display: none;
   }
+
+  .home-ads {
+    
+    .ads-card {
+      .img-box{
+        height: 265px;
+      }
+      .content-box{
+        padding: 15px;
+        padding-bottom: 30px;
+        h4 {
+          font-size: 1.25rem;
+          line-height: 27px;
+          height: calc(28px* 2);
+        }
+      }
+    }
+  }
 }
 
 
@@ -466,7 +506,7 @@
     position: absolute;
     background: rgb(181, 133, 0);
     width: 100%;
-    top: 70px;
+    top: 45px;
     #{$start-direction}: 0px;
     z-index: 2;
     padding-bottom: 30px;
@@ -671,6 +711,148 @@
   .aboutBg {
     padding: 66px 0 85px;
   }
+  
+  .homeBanner .topNav {
+      padding: 15px 0 30px !important;
+      img {
+      max-height: 165px !important;
+    }
+  }
+.content {
+  .top-sec .content-box {
+    h2{
+      font-size: 1.5625rem;
+    }
+    
+  }
+  p{
+    font-size: 1rem;
+    line-height: 30px;
+  }
+  h4{
+    font-size: 1.325rem;
+  }
+  ul li , ol li {
+    font-size: 1rem;
+    margin-bottom: 5px;
+  }
+
+  .table-box{
+    padding: 0;
+    .table thead tr th{
+      font-size: 1rem;
+    }
+    .table tbody tr th, .table tbody tr td{
+      font-size: 1rem;
+    }
+  }
+}
+
+.FAQ{
+  h2.main-header{
+    font-size: 1.5625rem;
+  }
+  p{
+    font-size: 1rem;
+  }
+  .accordion .accordion-item {
+    h2 .accordion-button {
+      font-size: 1.25rem;
+    }
+    .accordion-collapse .accordion-body{
+      font-size: 1rem;
+    }
+  }
+  &.sitemap {
+    .sitemap-a{
+      font-size: 1.25rem;
+    }
+    ul{
+      li{
+        margin-bottom: 7px;
+        a{
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}
+
+.home-ads {
+  .ads-card{
+    margin-bottom: 20px;
+  }
+}
+.reports-home {
+  .item {
+    height: 500px;
+    } 
+  .reports-card {
+    height: 405px;
+    &:hover{
+      height: 480px;
+    }
+    .img-box{
+      height: 285px;
+    }
+
+  }
+}
+.home-ads , .reports-home {
+  .top-area {
+    h2.main-header{
+      font-size: 1.25rem;
+    }
+    p{
+      font-size: 1rem;
+    }
+  }
+}
+.contact-us {
+  .main-header{
+    font-size: 1.5rem;
+    padding-bottom: 35px;
+  }
+  .contact-sec {
+    .contact-with-us{
+      h3{
+        font-size: 1.25rem;
+      }
+      p{
+        font-size: 1rem;
+      }
+      ul.Contact-ul{
+        li {
+          a{
+            font-size: 0.875rem;
+          }
+        }
+      }
+    }
+  }
+  .contact-sec{
+    .contact-form {
+      .form-title{
+        font-size: 1.25rem;
+      }
+      .formGroup input, .contact-us .contact-sec .contact-form .formGroup textarea{
+        padding: 8px 20px;
+        font-size: .875rem;
+        font-family: "DSC-Medium";
+        width: 100%;
+        min-height: 40px;
+      }
+    }
+  } 
+}
+.map-area {
+  h3{
+    font-size: 1.5rem;
+  }
+  .mapFrom{
+    height: 400px;
+  }
+}
 }
 
 @media (max-width: 767.98px) {
@@ -678,7 +860,7 @@
     .left{
       flex-wrap: wrap;
       // max-width: 60%;
-      margin-#{$start-direction}: 190px;
+      margin-#{$start-direction}: 175px;
     }
     .topNav {
       padding: 25px 0 55px;
@@ -747,7 +929,7 @@
         position: absolute;
         width: 95px;
         height: 100%;
-        left: 0;
+        #{$end-direction}: 0;
         font-size: 0.875rem;
         padding: 9px;
       }
@@ -816,11 +998,17 @@
   .NewsBg {
     .headBox{
       flex-direction: column;
-      .SelectInput {
-        display: flex;
+      .sortActions{
+        flex-direction: column;
         align-items: center;
-        justify-content: flex-end;
-        margin-top: 10px;
+        .SelectInput {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-top: 10px;
+          margin-#{$end-direction}: 0;
+          width: 300px;
+        }
       }
     }
   }
@@ -829,7 +1017,7 @@
   }
   .NewsBg .headBox .SelectInput {
     .select {
-      min-width: 125px;
+      min-width: 140px;
       background-size: 15px;
     }
     .label {
@@ -899,6 +1087,8 @@
     }
   }
 }
+
+
 @media (max-width: 574.98px) {
   .fancybox-opened{
     width: 315px !important;
@@ -913,5 +1103,11 @@
 }
 .Events .eventBox .textEv .date span.to{
   display: block;
+}
+
+.reports-home {
+  .more-rep{
+    margin-top: 10px;
+  }
 }
 }
